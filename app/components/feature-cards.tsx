@@ -1,14 +1,13 @@
 "use client";
 
 import { Card } from "@/app/components/ui/card";
-import { Bolt, Lock, MessageSquareHeart, ShieldCheck, TimerReset, UserRoundX } from "lucide-react";
+import { Bolt, Lock, MessageSquareHeart, TimerReset, UserRoundX } from "lucide-react";
 import { motion } from "framer-motion";
 
 const items = [
   { icon: UserRoundX, title: "Anonymous", text: "No names, profiles, or identity data." },
   { icon: TimerReset, title: "Temporary", text: "Rooms live in memory and disappear after exit." },
   { icon: Bolt, title: "Instant matching", text: "Join the queue and get paired in seconds." },
-  { icon: MessageSquareHeart, title: "Realtime text", text: "Socket.IO powers messages, typing, skips, and reconnects." },
   { icon: Lock, title: "Small surface", text: "No uploads, no database, no local message storage." },
 ];
 
