@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ghostline Chat social preview">
+  <defs>
+    <linearGradient id="og-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062d2a"/>
+      <stop offset=".52" stop-color="#071013"/>
+      <stop offset="1" stop-color="#332607"/>
+    </linearGradient>
+    <radialGradient id="orb" cx=".45" cy=".38" r=".65">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset=".58" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#042f2e"/>
+    </radialGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og-bg)"/>
+  <g opacity=".12" stroke="#ccfbf1" stroke-width="1">
+    <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/>
+    <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
+  </g>
+  <g opacity=".22" stroke-linecap="round">
+    <path d="M54 138h230M366 138h430M884 138h206" stroke="#99f6e4" stroke-width="5"/>
+    <path d="M70 500h310M460 500h320M860 500h270" stroke="#fde68a" stroke-width="5" opacity=".55"/>
+    <path d="M30 386h390M500 386h620" stroke="#99f6e4" stroke-width="6" opacity=".72"/>
+  </g>
+  <g transform="translate(790 126)">
+    <circle cx="152" cy="190" r="154" fill="url(#orb)" stroke="#99f6e4" stroke-opacity=".42" stroke-width="3"/>
+    <ellipse cx="152" cy="190" rx="204" ry="44" fill="none" stroke="#99f6e4" stroke-opacity=".32" stroke-width="6" transform="rotate(-18 152 190)"/>
+    <ellipse cx="152" cy="190" rx="54" ry="214" fill="none" stroke="#99f6e4" stroke-opacity=".22" stroke-width="6" transform="rotate(18 152 190)"/>
+    <path d="M35 142 152 36l119 104-27 152H64Z" fill="none" stroke="#fde68a" stroke-opacity=".46" stroke-width="3"/>
+    <path d="m35 142 208 150M271 140 64 292M152 36l92 256M152 36 64 292M35 142h236M64 292h180" fill="none" stroke="#fde68a" stroke-opacity=".38" stroke-width="2"/>
+    <circle cx="118" cy="160" r="14" fill="#ccfbf1" opacity=".92"/>
+    <circle cx="198" cy="226" r="14" fill="#facc15" opacity=".72"/>
+  </g>
+  <g transform="translate(72 68)">
+    <rect width="74" height="74" rx="20" fill="url(#pill)"/>
+    <path d="M20 40c0-16 13-28 29-28s29 12 29 28-13 28-29 28c-6 0-12-2-17-5l-11 4 4-11c-4-5-5-10-5-16Z" fill="#071013"/>
+    <path d="M32 40c0-10 8-16 17-16s17 6 17 16-8 16-17 16c-4 0-7-1-10-3l-5 2 2-5c-3-3-4-6-4-10Z" fill="#5eead4"/>
+    <text x="96" y="32" fill="#f4f7f6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">Ghostline Chat</text>
+    <text x="98" y="65" fill="#99f6e4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Anonymous random text chat</text>
+  </g>
+  <text x="72" y="270" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="900">Anonymous chat online</text>
+  <text x="72" y="346" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="58" font-weight="850">No signup. Text only.</text>
+  <text x="76" y="402" fill="#d8f7f0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">Realtime stranger chat with temporary in-memory sessions.</text>
+  <g transform="translate(72 462)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="750">
+    <rect width="158" height="48" rx="16" fill="#ffffff" fill-opacity=".08" stroke="#99f6e4" stroke-opacity=".28"/>
+    <text x="28" y="31" fill="#ccfbf1">No accounts</text>
+    <rect x="178" width="135" height="48" rx="16" fill="#ffffff" fill-opacity=".08" stroke="#99f6e4" stroke-opacity=".28"/>
+    <text x="206" y="31" fill="#ccfbf1">No history</text>
+    <rect x="334" width="141" height="48" rx="16" fill="url(#pill)"/>
+    <text x="365" y="31" fill="#042f2e">Start chat</text>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+
+> anon-chat@0.1.0 start
+> cross-env NODE_ENV=production tsx server/server.ts
+
+> Ready on http://0.0.0.0:3001

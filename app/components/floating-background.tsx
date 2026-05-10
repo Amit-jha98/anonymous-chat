@@ -34,7 +34,6 @@ export function FloatingBackground() {
     scene.add(ambient, key, warm);
 
     const group = new THREE.Group();
-    group.position.set(1.7, -0.1, 0);
     scene.add(group);
 
     const coreGeometry = new THREE.IcosahedronGeometry(1.38, 3);
@@ -67,8 +66,8 @@ export function FloatingBackground() {
       opacity: 0.2,
       transparent: true,
     });
-    const ringA = new THREE.Mesh(new THREE.TorusGeometry(1.9, 0.012, 10, 150), ringMaterial);
-    const ringB = new THREE.Mesh(new THREE.TorusGeometry(2.32, 0.01, 10, 150), ringMaterial.clone());
+    const ringA = new THREE.Mesh(new THREE.TorusGeometry(1.72, 0.012, 10, 150), ringMaterial);
+    const ringB = new THREE.Mesh(new THREE.TorusGeometry(2.06, 0.01, 10, 150), ringMaterial.clone());
     ringA.rotation.set(1.1, 0.2, 0.2);
     ringB.rotation.set(0.35, 1.2, -0.5);
     group.add(ringA, ringB);
@@ -97,9 +96,16 @@ export function FloatingBackground() {
     const resize = () => {
       const width = Math.max(stage.clientWidth, 1);
       const height = Math.max(stage.clientHeight, 1);
+      const isMobile = width < 640;
+      const isTablet = width >= 640 && width < 1024;
+
       renderer.setSize(width, height, false);
       camera.aspect = width / height;
+      camera.position.z = isMobile ? 8.25 : 7.4;
       camera.updateProjectionMatrix();
+
+      group.scale.setScalar(isMobile ? 0.38 : isTablet ? 0.58 : 0.66);
+      group.position.set(isMobile ? 0.34 : isTablet ? 1.55 : 2.58, isMobile ? -0.42 : -0.05, 0);
     };
 
     const observer = new ResizeObserver(resize);
@@ -143,12 +149,14 @@ export function FloatingBackground() {
   }, []);
 
   return (
-    <div ref={stageRef} className="pointer-events-none absolute inset-0 overflow-hidden">
-      <canvas
-        ref={canvasRef}
-        aria-hidden
-        className="absolute inset-0 h-full w-full opacity-80 mix-blend-screen"
-      />
+    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+      <div ref={stageRef} className="fixed inset-0 [height:100svh]">
+        <canvas
+          ref={canvasRef}
+          aria-hidden
+          className="absolute inset-0 h-full w-full opacity-80 mix-blend-screen"
+        />
+      </div>
       <div className="surface-grid absolute inset-0 opacity-70" />
       <div className="rain-field rain-field-fast absolute inset-0" />
       <div className="rain-field rain-field-slow absolute inset-0" />

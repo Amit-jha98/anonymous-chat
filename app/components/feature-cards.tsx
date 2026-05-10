@@ -8,7 +8,6 @@ const items = [
   { icon: UserRoundX, title: "Anonymous", text: "No names, profiles, or identity data." },
   { icon: TimerReset, title: "Temporary", text: "Rooms live in memory and disappear after exit." },
   { icon: Bolt, title: "Instant matching", text: "Join the queue and get paired in seconds." },
-  { icon: ShieldCheck, title: "Render ready", text: "Next.js, Express, and Socket.IO ship as one service." },
   { icon: MessageSquareHeart, title: "Realtime text", text: "Socket.IO powers messages, typing, skips, and reconnects." },
   { icon: Lock, title: "Small surface", text: "No uploads, no database, no local message storage." },
 ];

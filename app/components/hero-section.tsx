@@ -20,7 +20,7 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 28 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="max-w-3xl font-heading text-4xl font-bold leading-tight text-white sm:text-6xl"
+        className="max-w-full text-balance font-heading text-3xl font-bold leading-tight text-white sm:max-w-3xl sm:text-6xl"
       >
         Anonymous chat online, no signup, text only.
       </motion.h1>
@@ -28,7 +28,7 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 22 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="mt-5 max-w-2xl text-sm leading-relaxed text-zinc-300 sm:text-base"
+        className="mt-5 max-w-full text-sm leading-relaxed text-zinc-300 sm:max-w-2xl sm:text-base"
       >
         Ghostline pairs two strangers in a private temporary chat room over realtime Socket.IO, then
         clears the session when either person leaves.
@@ -37,7 +37,7 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.16 }}
-        className="mt-3 max-w-2xl text-xs font-medium uppercase text-teal-100/80"
+        className="mt-3 max-w-xs text-xs font-medium uppercase text-teal-100/80 sm:max-w-2xl"
       >
         Popular anonymous chat for random stranger text conversations
       </motion.p>
@@ -45,7 +45,7 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.65, delay: 0.18 }}
-        className="mt-6 flex flex-wrap items-center justify-center gap-2"
+        className="mt-6 flex max-w-xs flex-wrap items-center justify-center gap-2 sm:max-w-none"
       >
         {signals.map((signal) => (
           <span
